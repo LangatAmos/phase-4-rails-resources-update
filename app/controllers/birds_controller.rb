@@ -23,7 +23,7 @@ class BirdsController < ApplicationController
   end
 
   #PATCH /bird/:id
-  def update
+  def increment_likes
     # find the bird by its id
     bird = Bird.find_by(id: params[:id])
     # update the bird
